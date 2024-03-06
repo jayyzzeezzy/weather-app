@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link href="style.css" rel="stylesheet">
-    <style src="index.js" defer></style>
+    <script src="index.js" defer></script>
+    <!-- Icon support -->
+    <script src="https://kit.fontawesome.com/ac45deee9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="main-content">
+        <header class="header">
+            <h1>Weather App</h1>
+            <form>
+                <div class="search-bar">
+                    <input id="user-input" type="text" placeholder="Search location...">
+                    <button class="submit-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <p class="error-msg">Cannot find this location!</p>
+                </div>
+            </form>
+        </header>
+
+        <div class="content">
+            <div class="weather-display">
+                <div class="general-info">
+                    <h4 class="city"></h4>
+                    <p class="condition"></p>
+                </div>
+                
+                <div class="detail-info">
+                    <div class="detail-left">
+                        <h3 class="temp"></h3>
+                    </div>
+                    
+                    <div class="detail-right">
+                        <p class="feels-like"></p>
+                        <p class="wind"></p>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
 </body>
 </html>
